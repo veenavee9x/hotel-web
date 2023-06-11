@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rooms</title>
+    <link rel="stylesheet" type="text/css" href="./styles/rooms.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+				<li class="logo"><a href="home.html">Hotel Arigana</a></li>
+				<li class="item"><a href="home.html">Home</a></li>
+				<li class="item"><a href="aboutus.html">About Us</a></li>
+				<li class="item"><a href="rooms.html">Rooms</a></li>
+				<li class="item"><a href="faq.html">FAQ</a></li>
+				<li class="item button"><a href="login.html">Log In</a></li>
+				<li class="item button secondary"><a href="register.html">Register</a></li>
+				<li class="toggle"><span class="bars"></span></li>
+			</ul>
+        </nav>
+    </header>
+
+    <div class="room-container">
+        <div class="room" onclick="selectRoom(1)">
+            <img src="./img/r1.jpg" alt="Standard Room">
+            <div class="room-details">
+                <h2>Standard Room</h2>
+                <p>The Standard Room offers a comfortable stay with essential amenities.
+                    <br>
+                    Starting at $99.00 per night.
+                </p>
+                <a href="book.html">Book Now</a>
+            </div>
+        </div>
+
+        <div class="room" onclick="selectRoom(2)">
+            <img src="./img/r2.jpg" alt="Standard Room">
+            <div class="room-details">
+                <h2>Deluxe Room</h2>
+                <p>The Deluxe Room provides a luxurious experience with upgraded amenities.
+                    <br>
+                    Starting at $149.00 per night.
+                </p>
+                <a href="book.html">Book Now</a>
+            </div>
+        </div>
+
+        <div class="room" onclick="selectRoom(3)">
+            <img src="./img/r3.jpg" alt="Standard Room">
+            <div class="room-details">
+                <h2>Suite</h2>
+                <p>Indulge in the ultimate luxury and spaciousness of our Suite.
+                    <br>
+                    Starting at $249.00 per night.
+                </p>
+                <a href="book.html">Book Now</a>
+            </div>
+        </div>
+
+        <div class="room" onclick="selectRoom(4)">
+            <img src="./img/r4.jpg" alt="Standard Room">
+            <div class="room-details">
+                <h2>Executive Room</h2>
+                <p>Experience a blend of comfort and functionality in our Executive Room, designed for business travelers.
+                    <br>
+                    Starting at $259.00 per night.
+                </p>
+                <a href="book.html">Book Now</a>
+            </div>
+        </div>
+
+        <div class="room" onclick="selectRoom(5)">
+            <img src="./img/r5.jpg" alt="Standard Room">
+            <div class="room-details">
+                <h2>Family Room</h2>
+                <p>Create cherished family memories in our spacious Family Room, designed to accommodate your loved ones.
+                    <br>
+                    Starting at $179.00 per night.
+                </p>
+                <a href="book.html">Book Now</a>
+            </div>
+        </div>
+
+        <div class="room" onclick="selectRoom(6)">
+            <img src="./img/r6.jpg" alt="Villa">
+            <div class="room-details">
+                <h2>Villa</h2>
+                <p>Escape to unparalleled luxury and privacy in our exquisite Villa, offering a secluded retreat.
+                    <br>
+                    Starting at $499.00 per night.
+                </p>
+                <a href="book.html">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/rooms.js"></script>
+    <footer class="footer">
+        <div class="fcontainer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Hotel</h4>
+                    <ul class="ul">
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="ul">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Rooms & Offers</h4>
+                    <ul class="ul">
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
